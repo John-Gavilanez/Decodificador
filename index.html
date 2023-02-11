@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+</head>
+<body>
+    <header>
+            <img src="imagenes/Logo.png" alt="LogoAlura">
+    </header>
+
+    <main>
+        <section>
+            <textarea name="msmEntrada" id="txtEntrada" cols="30" rows="10"></textarea>
+            <div>  
+                <p>Solo letras minúsculas y sin acento</p>
+            </div>
+            <div>
+                <button class="btnEncrip" type="button" id="btnEncrip" onclick="btnEncriptar()">ENCRIPTAR</button>
+                <button class="btnDesencrip" type="button" id="btnDesencrip" onclick="btnDesencriptar()">DESENCRIPTAR</button>
+            </div>
+        </section>
+
+        <section>
+            <img id="img" src="imagenes/Muñeco.png" alt="">
+            <textarea name="msmSalida" id="txtSalida" cols="30" rows="10"></textarea>
+            <div>                        
+                <h2 class="titulo-mensaje" id="titulo">Ningun mensaje fue encontrado</h2>       
+                <p id="parrafo" >Ingresa el texto que deseas encriptar o desencriptar</p>            
+            </div>
+            <div>
+                <button class="btnCopiar" type="button" id="btnCopiar" onclick="btncopiar()">COPIAR</button>
+            </div>
+        </section>
+
+                
+    </main>
+<script src="Funciones.js"></script>
+</body>
+</html>
