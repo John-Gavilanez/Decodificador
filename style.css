@@ -1,60 +1,211 @@
-main{
-    background-color: aqua;
-    position: absolute;
-    width: 100%;
-    height: 100%;
+.contenido{
+    position: relative;
+    width: 100vw;
+    height:  100vh;
+    background-size: 500%;
+    background-image: linear-gradient(130deg,rgb(212, 223, 230),rgb(62, 119, 158),rgb(108, 124, 134), rgb(65, 69, 77));
+    animation: animaciones 10s infinite;
+    animation-timing-function: cubic-bezier(0.53, 0.03, 0.2, 1);
 }
 
-.usuario{
-    background-color: rgb(124, 143, 143);
-    position: absolute;
-    width: 60%;
-    height: 50%;
+/*diseño responsivo para celular*/
+@media (min-width:200px){
+
     
-}
 
-.mensajeEntrada{
-    background-color: rgb(216, 220, 223);
-    position: absolute;
-    top: 1%;
-    left: 20%;
-    width: 70%;
-    height: 70%;
-    border: none;
-    resize: none;
-    font-family: "Inter";
-    font-style: italic;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 150%;
-
-}
-
-/*diseño responsivo para pc*/
-
-@media (min-width:900px){
-
-    body{
-        width: 100vw;
-        height: 100vh;
-    } 
-    
     .encabezado{
         position: absolute;
-        width: 60%;
+        width: 100%;
         height:14%;
-        /* background-color: blue; */
     }
     
     .logo{
         position: absolute;
         top: 36%;
-        left: 5%;
-        /* background-color: yellow; */
+        left: 1%;
+    }
+       
+    main{
+        position: absolute;
+        top: 14%;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    
+    .usuario{
+        position: absolute;
+        width: 100%;
+        height: 95%;
+    }
+    
+    .mensajeEntrada{
+        background-color: rgb(216, 220, 223);
+        position: absolute;
+        top: 1%;
+        left: 2%;
+        width: 96%;
+        height: 70%;
+        border: none;
+        resize: none;
+        font-family: "Inter";
+        font-style: italic;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 150%;
+    }
+    
+    .mensajeEntrada:focus, .mensajeEntrada:active {
+        border: none;
+        outline: none;
+    }
+    
+    .instruccion{
+        position: absolute;
+        top: 74%;
+        left: 2%;
+    }
+    
+    .botonesUsu{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top:77%;
+        left: 2%;
+        width: 96%;
+        height: 22%;
+        gap: 4%;
+        align-items: center;
+
+    }
+    
+    .btnEncrip, .btnDesencrip{
+        background-color: rgb(216, 220, 223);
+        padding: 4%;
+        width: 48%;
+        border-radius: 24px;
+        justify-content: center;
+        font-family: "Inter";
+        font-size: 14px;
+        line-height: 19px;
+        text-align: center;
+        align-items: center;
+    
+    } 
+    
+    /*Area Respuesta*/
+        
+    .respuesta{
+        background-color: rgb(216, 220, 223);
+        position: absolute;
+        top: 100%;
+        left: 2%;
+        width: 96%;
+        height: 60% ;
+        text-align: center;
+        border-radius: 32px;
+    }
+    
+    .mensajeSalida{
+        background-color: rgb(216, 220, 223);
+        position: absolute;
+        position: absolute;
+        top: 10%;
+        left: 2%;
+        width: 96%;
+        height: 65%;
+        border: none;
+        resize: none;
+        font-family: "Inter";
+        font-style: italic;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 150%;
+    }
+    
+    .mensajeSalida:focus, .mensajeSalida:active{
+        border: none;
+        outline: none;
+    }
+    
+    .munheco {
+        /* background-color: crimson; */
+        position: absolute;
+        top: 25%;
+        left: 10.75%;
+        width: 78%;
+        display: none;
+    }
+    
+    .textosPanel{
+        /* background-color: coral; */
+        position: absolute;
+        top: 10%;
+        left: 25%;
+        width: 50%;
+    }
+    
+    .textosPanel h2{
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 120%;
+        text-align: center;
+        color: rgb(44, 44, 44);
+    }
+    
+    .textosPanel p{
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        text-align: center;
+        color: rgb(102, 107, 107);   
+    }
+    
+    .botonAtajo{
+        /* background-color: chartreuse; */
+        position: absolute;
+        top: 81%;
+        left: 20%;
+        width: 60%;
+        height: 18%;
+        align-items: center;
+    }
+    
+    .btnCopiar{
+        position: absolute;
+        top: 8%;
+        left: 10%;
+        padding: 4%;
+        width: 80%;
+        height: 85%;
+        border-radius: 24px;
+        justify-content: center;
+        font-family: "Inter";
+        font-size: 18px;
+        line-height: 19px;
+        text-align: center;
+        align-items: center;
+    }
+
+}
+
+/*diseño responsivo para pc*/
+
+@media (min-width:720px){
+
+    .logo{
+        position: absolute;
+        top: 36%;
+        left: 10%;
     }
     
     main{
-        /* background-color: black; */
         position: absolute;
         top: 14%;
         width: 100%;
@@ -63,11 +214,9 @@ main{
     }
     
     .usuario{
-        /* background-color: aqua; */
         position: absolute;
         width: 60%;
         height: 100%;
-        text-align: center;
     }
     
     .mensajeEntrada{
@@ -84,7 +233,6 @@ main{
         font-weight: 400;
         font-size: 32px;
         line-height: 150%;
-    
     }
     
     .mensajeEntrada:focus, .mensajeEntrada:active {
@@ -99,7 +247,6 @@ main{
     }
     
     .botonesUsu{
-        /* background-color: brown; */
         display: flex;
         flex-direction: row;
         position: absolute;
@@ -109,7 +256,6 @@ main{
         height: 15%;
         gap: 4%;
         align-items: center;
-        
     }
     
     .btnEncrip, .btnDesencrip{
@@ -119,11 +265,10 @@ main{
         border-radius: 24px;
         justify-content: center;
         font-family: "Inter";
-        font-size: 18px;
+        font-size: 17px;
         line-height: 19px;
         text-align: center;
         align-items: center;
-    
     }
     
     /*Area Respuesta*/
@@ -162,18 +307,16 @@ main{
     }
     
     .munheco {
-        /* background-color: crimson; */
         position: absolute;
         top: 25%;
         left: 10.75%;
         width: 78%;
-        
+        display: block;
     }
     
     .textosPanel{
-        /* background-color: coral; */
         position: absolute;
-        top: 15%;
+        top: 10%;
         left: 25%;
         width: 50%;
     }
@@ -195,13 +338,10 @@ main{
         font-size: 16px;
         line-height: 150%;
         text-align: center;
-        color: rgb(102, 107, 107);
-    
-        
+        color: rgb(102, 107, 107);   
     }
-    
+        
     .botonAtajo{
-        /* background-color: chartreuse; */
         position: absolute;
         top: 84%;
         left: 15%;
@@ -209,7 +349,7 @@ main{
         height: 14%;
         align-items: center;
     }
-    
+        
     .btnCopiar{
         position: absolute;
         top: 8%;
@@ -227,3 +367,14 @@ main{
     }
 }
 
+@keyframes animaciones{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0%-50%;
+    }
+}
