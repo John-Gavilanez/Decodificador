@@ -18,7 +18,6 @@ function btnEncriptar(){
 
     else{
         msmEntrada.value = "";
-        document.getElementById("img").style.display="block"; 
         document.getElementById("parrafo").style.display="block"; 
         document.getElementById("titulo").style.display="block";
         document.querySelector(".mensajeSalida").style.display="none";
@@ -39,7 +38,6 @@ function btnDesencriptar(){
         document.querySelector(".btnCopiar").style.display="block"; 
     }else{
         msmEntrada.value = "";
-        document.getElementById("img").style.display="block"; 
         document.getElementById("parrafo").style.display="block"; 
         document.getElementById("titulo").style.display="block";
         document.querySelector(".mensajeSalida").style.display="none";
